@@ -86,5 +86,53 @@
             "name": "Terpenes",
             "percentage": 6
         }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 10,
+        "fields": {
+            "name": "Oils",
+            "percentage": 30
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 11,
+        "fields": {
+            "name": "CBD",
+            "percentage": 52
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 12,
+        "fields": {
+            "name": "THC",
+            "percentage": 40
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 13,
+        "fields": {
+            "name": "Indica",
+            "percentage": 16
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 14,
+        "fields": {
+            "name": "Limonene",
+            "percentage": 64
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 15,
+        "fields": {
+            "name": "Sativa",
+            "percentage": 92
+        }
     }
 ]

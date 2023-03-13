@@ -1,0 +1,90 @@
+[
+    {
+        "model": "store.ingredient",
+        "pk": 1,
+        "fields": {
+            "name": "Indica",
+            "percentage": 100
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 1,
+        "fields": {
+            "name": "Sativa",
+            "percentage": 70
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 1,
+        "fields": {
+            "name": "Myrcene",
+            "percentage": 15
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 2,
+        "fields": {
+            "name": "CBD",
+            "percentage": 10
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 3,
+        "fields": {
+            "name": "THC",
+            "percentage": 20
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 4,
+        "fields": {
+            "name": "Limonene",
+            "percentage": 12
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 5,
+        "fields": {
+            "name": "Pinene",
+            "percentage": 8
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 6,
+        "fields": {
+            "name": "Oils",
+            "percentage": 10
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 7,
+        "fields": {
+            "name": "Trichomes",
+            "percentage": 12
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 8,
+        "fields": {
+            "name": "Flavonoids",
+            "percentage": 7
+        }
+    },
+    {
+        "model": "store.ingredient",
+        "pk": 9,
+        "fields": {
+            "name": "Terpenes",
+            "percentage": 6
+        }
+    }
+]

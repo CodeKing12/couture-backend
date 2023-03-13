@@ -1,0 +1,4 @@
+Now create fixtures for the following Categories in my weed ecommerce store. The name of the store is 'The Pot Shop'. Make sure the description hovers around the max_length in the model. The name of the app is store. Here is the model for the fixture I want you to create:
+["Flowers", "Edibles", "Concentrates", "Mushrooms", "Tropicals", "Pre-rolls", "Hybrids", "Accessories"]
+
+['Myrcene', 'CBD', 'THC', 'Limonene', 'Pinene', 'Oils', 'Trichomes', 'Flavonoids', 'Terpenes']

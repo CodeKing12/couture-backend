@@ -1,0 +1,34 @@
+[
+    {
+        "model": "store.addon",
+        "pk": 1,
+        "fields": {
+            "name": "Grinder",
+            "price": 10.99
+        }
+    },
+    {
+        "model": "store.addon",
+        "pk": 2,
+        "fields": {
+            "name": "Rolling Papers",
+            "price": 4.99
+        }
+    },
+    {
+        "model": "store.addon",
+        "pk": 3,
+        "fields": {
+            "name": "Filters/Tips",
+            "price": 2.99
+        }
+    },
+    {
+        "model": "store.addon",
+        "pk": 4,
+        "fields": {
+            "name": "Vaporizer",
+            "price": 79.99
+        }
+    }
+]

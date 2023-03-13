@@ -1,0 +1,66 @@
+[
+    {
+      "model": "store.category",
+      "pk": 1,
+      "fields": {
+        "title": "Flowers",
+        "description": "Our selection of premium flowers is hand-picked and meticulously cured to perfection. From classic strains to rare exotics, we offer the finest buds that cater to a range of preferences. Our flowers are grown organically and with care, ensuring a clean and potent experience. With a variety of terpene profiles, THC and CBD percentages, and flavors, our flowers are sure to please any discerning cannabis consumer. Whether you're looking for a cerebral high or a relaxing body buzz, our flowers are sure to provide an exceptional experience."
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 2,
+      "fields": {
+        "title": "Edibles",
+        "description": "Our selection of delicious edibles is the perfect way to indulge in a discreet and enjoyable cannabis experience. From gummies to chocolates, we offer a range of tasty treats that cater to a variety of preferences. Made with high-quality cannabis extracts and ingredients, our edibles provide a consistent and reliable experience. With precise dosing and a variety of flavors and textures, our edibles are sure to satisfy any sweet tooth."
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 3,
+      "fields": {
+        "title": "Concentrates",
+        "description": "Our concentrates are the epitome of potency and flavor. From live resin to shatter, we offer a variety of premium extracts that cater to a range of preferences. Our concentrates are made with the finest cannabis material and extracted using state-of-the-art equipment, ensuring a clean and potent experience. With a variety of terpene profiles and THC percentages, our concentrates are sure to provide an exceptional experience for any cannabis consumer."
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 4,
+      "fields": {
+        "title": "Mushrooms",
+        "description": "Psychedelic mushrooms, also known as magic mushrooms or shrooms, contain psilocybin, a psychoactive compound that can cause changes in perception, mood, and thought. These mushrooms have been used for thousands of years in spiritual and religious ceremonies and are known for their ability to induce profound and mystical experiences. While some studies suggest that psilocybin may have therapeutic potential, these mushrooms are currently illegal in most countries."
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 5,
+      "fields": {
+        "title": "Tropicals",
+        "description": "Experience the magic of the tropics with our selection of exotic and tropical strains. These strains are known for their unique and complex flavors, and their uplifting and energizing effects. Our tropical strains are grown in ideal conditions to ensure optimal potency and quality. Some popular strains in this category include Maui Wowie, Pineapple Express, and Mango Kush. These strains are perfect for those who want to enjoy the benefits of cannabis while feeling like they are on a tropical vacation."
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 6,
+      "fields": {
+        "title": "Pre-rolls",
+        "description": "Pre-rolls are the perfect option for those who want to enjoy the effects of cannabis without the hassle of rolling their own joints. Our pre-rolls are made with high-quality flower and come in a variety of strains to suit your preferences. Whether you prefer a mellow indica or an energizing sativa, we've got you covered. Each pre-roll is carefully crafted for a smooth and even burn, so you can enjoy the full flavor and effects of the strain. With our pre-rolls, you can sit back, relax, and let the good times roll."
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 7,
+      "fields": {
+        "title": "Hybrids",
+        "description": "Hybrids are the perfect option for those who want to experience the best of both worlds. With a combination of sativa and indica genetics, hybrids offer a unique and well-rounded experience that can be tailored to your preferences. Whether you want to feel energized and uplifted or relaxed and mellow, our hybrid strains have got you covered. Each strain is carefully crafted to offer a balance of effects that will leave you feeling happy, relaxed, and ready to take on the day."
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 8,
+      "fields": {
+        "title": "Accessories",
+        "description": "In addition to our high-quality cannabis products, we also offer a wide range of accessories to enhance your smoking experience. From grinders and rolling papers to pipes and vaporizers, we've got everything you need to enjoy your favorite strains. Our accessories are made with high-quality materials and are designed to be both functional and stylish. Whether you're a seasoned smoker or just starting out, our accessories will take your smoking experience to the next level."
+      }
+    }
+]

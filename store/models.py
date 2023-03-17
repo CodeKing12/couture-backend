@@ -57,16 +57,32 @@ class Addon(models.Model):
 
 
 class Category(models.Model):
-    title = models.CharField(max_length=50)
+    title = models.CharField(unique=True, max_length=50)
+    slug = models.SlugField(max_length=70, auto_created=True)
     description = models.TextField(max_length=650)
 
     class Meta:
         verbose_name = "Category"
         verbose_name_plural = "Categories"
     
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.title
 
+
+class ProductGroup(models.Model):
+    name = models.CharField(max_length=100)
+    products = models.ManyToManyField("Product")
+
+    class Meta:
+        verbose_name = "Group"
+        verbose_name_plural = "Groups"
+
+    def __str__(self):
+        return self.name
 
 # I'm creating the backend, using Django, for an ecommerce store that sells different categories of weed. 
 

@@ -2,4 +2,4 @@ Categories: ["Flowers", "Edibles", "Concentrates", "Mushrooms", "Tropicals", "Pr
 Compositions: ['Myrcene', 'CBD', 'THC', 'Limonene', 'Pinene', 'Oils', 'Trichomes', 'Flavonoids', 'Terpenes']
 
 
-Changed all fixtures to reflect the original ones used to populate the db
+created the Category and Composition Serializers, modified the output json for the Product Serializer to show the name and slug of the categories and the compositions, added the Group model and its admin equivalent

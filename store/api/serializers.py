@@ -4,7 +4,7 @@ from store.models import Product, Category, Composition
 class CategorySerializer(ModelSerializer):
     class Meta:
         model = Category
-        fields = '_all__'
+        fields = '__all__'
 
 
 class CompositionSerializer(ModelSerializer):
@@ -12,7 +12,11 @@ class CompositionSerializer(ModelSerializer):
         model = Composition
         fields = '__all__'
 
+
 class ProductSerializer(ModelSerializer):
+    category = CategorySerializer()
+    composition = CompositionSerializer(many=True)
+
     class Meta:
         model = Product
         fields = '__all__'
@@ -24,10 +28,18 @@ class ProductSerializer(ModelSerializer):
                 'id': instance.id,
                 'name': instance.name,
                 'slug': instance.slug,
-                'category': instance.category,
+                'category': {
+                    "name": instance.category.title,
+                    "slug": instance.category.slug
+                },
                 'price': instance.price,
                 'previous_price': instance.previous_price,
-                'composition': instance.composition
+                'composition': [
+                    {
+                        "name": c.name,
+                        "percent": c.percentage
+                    } for c in instance.composition.all()
+                ]
             }
         
         return super().to_representation(instance)

@@ -9,7 +9,7 @@
     },
     {
         "model": "store.ingredient",
-        "pk": 1,
+        "pk": 16,
         "fields": {
             "name": "Sativa",
             "percentage": 70
@@ -17,7 +17,7 @@
     },
     {
         "model": "store.ingredient",
-        "pk": 1,
+        "pk": 17,
         "fields": {
             "name": "Myrcene",
             "percentage": 15

@@ -1,0 +1,1002 @@
+[
+    {
+        "model": "store.product",
+        "pk": 1,
+        "fields": {
+            "name": "Purple Haze",
+            "image": "images-to-use/products/1.webp",
+            "short_description": "This classic strain has a sweet, fruity aroma with hints of earthy undertones. It delivers a happy, uplifting, and energetic high that\u2019s perfect for daytime use.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 3,
+            "price": 22.99,
+            "previous_price": 24.99,
+            "effects": "Relaxation, Happiness, Euphoria, Creativity, Appetite stimulation",
+            "may_relieve": "Stress, Depression, Insomnia, Anxiety, Chronic pain, Headaches, Migraines, Inflammation, Nausea",
+            "aromas": "Citrusy, Earthy, Herbal, Piney, Sweet",
+            "composition": [
+                17,
+                8
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 2,
+        "fields": {
+            "name": "Sour Diesel",
+            "image": "images-to-use/products/2.webp",
+            "short_description": "Sour Diesel has a diesel-like aroma with a hint of citrus. Its high is cerebral, uplifting, and energizing, making it a great choice for getting things done.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 5,
+            "price": 17.0,
+            "previous_price": 0,
+            "effects": "Pain relief, Relaxation, Euphoria, Appetite stimulation, Sleepiness",
+            "may_relieve": "Chronic pain, Insomnia, Stress, Depression, Anxiety, Muscle spasms, Headaches, Migraines, Nausea, Loss of appetite",
+            "aromas": "Berry, Earthy, Fruity, Grape, Sweet",
+            "composition": [
+                12,
+                14
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 3,
+        "fields": {
+            "name": "Blue Dream",
+            "image": "images-to-use/products/3.webp",
+            "short_description": "Blue Dream has a sweet, fruity aroma and a balanced high that combines a relaxed body buzz with an energizing and creative mental high.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 5,
+            "price": 50.49,
+            "previous_price": 54.99,
+            "effects": "Euphoria, Relaxation, Upliftedness, Happiness, Creativity, Appetite stimulation",
+            "may_relieve": "Depression, Anxiety, Stress, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Muscle spasms, Insomnia",
+            "aromas": "Earthy, Flowery, Herbal, Pungent, Sweet",
+            "composition": [
+                11,
+                7
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 4,
+        "fields": {
+            "name": "Girl Scout Cookies",
+            "image": "images-to-use/products/4.webp",
+            "short_description": "Girl Scout Cookies has a sweet, earthy aroma and a powerful high that combines a cerebral buzz with a full-body relaxation. It's perfect for evening use.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 1,
+            "price": 64.42,
+            "previous_price": 75.99,
+            "effects": "Psychedelic experience, Euphoria, Relaxation, Spiritual awakening",
+            "may_relieve": "Depression, Stress, Anxiety, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Fatigue",
+            "aromas": "Diesel, Earthy, Piney, Pungent, Sour, Spicy",
+            "composition": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 5,
+        "fields": {
+            "name": "White Widow",
+            "image": "images-to-use/products/5.webp",
+            "short_description": "White Widow has a floral, earthy aroma with a hint of sweetness. Its high is energetic and uplifting, making it a great choice for daytime use.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 2,
+            "price": 180.44,
+            "previous_price": 199.99,
+            "effects": "Relaxation, Euphoria, Upliftedness, Happiness, Creativity",
+            "may_relieve": "Depression, Stress, Anxiety, Chronic pain, Muscle spasms, Nausea, Loss of appetite, Fatigue",
+            "aromas": "Citrusy, Earthy, Piney, Sour, Spicy",
+            "composition": [
+                12,
+                7
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 6,
+        "fields": {
+            "name": "OG Kush",
+            "image": "images-to-use/products/6.webp",
+            "short_description": "OG Kush has a spicy, earthy aroma and a strong, relaxing high that can help alleviate stress, anxiety, and pain.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 3,
+            "price": 31.43,
+            "previous_price": 0,
+            "effects": "Relaxation, Euphoria, Hunger, Sociability, Giggles",
+            "may_relieve": "Depression, Anxiety, Stress, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Muscle spasms",
+            "aromas": "Earthy, Herbal, Pungent, Sour, Sweet",
+            "composition": [
+                6,
+                6
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 7,
+        "fields": {
+            "name": "Granddaddy Purple",
+            "image": "images-to-use/products/7.webp",
+            "short_description": "Granddaddy Purple has a sweet, grape-like aroma and a strong, relaxing high that can help with insomnia, anxiety, and stress.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 7,
+            "price": 22.48,
+            "previous_price": 24.99,
+            "effects": "Relaxation, Upliftedness, Euphoria, Happiness, Creativity, Focus",
+            "may_relieve": "Insomnia, Depression, Stress, Anxiety, Chronic pain, Headaches, Migraines, Inflammation, Nausea, Muscle spasms, Fatigue",
+            "aromas": "Earthy, Herbal, Piney, Spicy, Woody",
+            "composition": [
+                7,
+                16
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 8,
+        "fields": {
+            "name": "Green Crack",
+            "image": "images-to-use/products/8.webp",
+            "short_description": "Green Crack has a citrusy, fruity aroma and a strong, energizing high that can help with fatigue and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 2,
+            "price": 21.86,
+            "previous_price": 22.99,
+            "effects": "Relaxation, Upliftedness, Euphoria, Happiness, Focus, Sleepiness",
+            "may_relieve": "Depression, Anxiety, Stress, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Muscle spasms",
+            "aromas": "Earthy, Flowery, Pungent, Sour, Spicy",
+            "composition": [
+                4,
+                7
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 9,
+        "fields": {
+            "name": "Northern Lights",
+            "image": "images-to-use/products/9.webp",
+            "short_description": "Northern Lights has a spicy, earthy aroma and a relaxing, full-body high that can help with insomnia, pain, and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 5,
+            "price": 21.9,
+            "previous_price": 23.99,
+            "effects": "Upliftedness, Happiness, Euphoria, Energy boost, Creativity",
+            "may_relieve": "Depression, Anxiety, Stress, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Muscle spasms, Insomnia, Fatigue",
+            "aromas": "Earthy, Fruity, Piney, Spicy, Sweet",
+            "composition": [
+                4,
+                6
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 10,
+        "fields": {
+            "name": "Gorilla Glue",
+            "image": "images-to-use/products/10.webp",
+            "short_description": "Gorilla Glue has a pungent, earthy aroma and a strong, sedating high that can help with pain, insomnia, and stress.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 43.32,
+            "previous_price": 49.99,
+            "effects": "Relaxation, Euphoria, Happiness, Pain relief, Appetite stimulation",
+            "may_relieve": "Depression, Stress, Anxiety, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Fatigue",
+            "aromas": "Earthy, Piney, Sweet, Woody",
+            "composition": [
+                16,
+                11
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 11,
+        "fields": {
+            "name": "Jack Herer",
+            "image": "images-to-use/products/11.webp",
+            "short_description": "Jack Herer has a spicy, piney aroma and a euphoric, energizing high that can help with depression, fatigue, and stress.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 4,
+            "price": 5.33,
+            "previous_price": 0,
+            "effects": "Relaxation, Euphoria, Happiness, Giggles",
+            "may_relieve": "Depression, Stress, Anxiety, Chronic pain, Muscle spasms, Nausea, Loss of appetite, Fatigue",
+            "aromas": "Diesel, Earthy, Piney, Pungent, Sour, Woody",
+            "composition": [
+                11,
+                14
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 12,
+        "fields": {
+            "name": "AK-47",
+            "image": "images-to-use/products/12.webp",
+            "short_description": "AK-47 has a sweet, floral aroma and a cerebral, uplifting high that can help with depression, anxiety, and pain.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 7,
+            "price": 58.33,
+            "previous_price": 69.99,
+            "effects": "Relaxation, Euphoria, Happiness, Appetite stimulation, Giggles",
+            "may_relieve": "Depression, Anxiety, Stress, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Muscle spasms",
+            "aromas": "Earthy, Herbal, Piney, Spicy, Sweet",
+            "composition": [
+                5,
+                14
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 13,
+        "fields": {
+            "name": "Super Silver Haze",
+            "image": "images-to-use/products/13.webp",
+            "short_description": "Super Silver Haze has a spicy, earthy aroma and a cerebral, energetic high that can help with fatigue and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 22.66,
+            "previous_price": 24.99,
+            "effects": "Relaxation, Euphoria, Happiness, Appetite stimulation, Sleepiness",
+            "may_relieve": "Insomnia, Depression, Stress, Anxiety, Chronic pain, Headaches, Migraines, Inflammation, Nausea, Muscle spasms, Fatigue",
+            "aromas": "Diesel, Earthy, Piney, Pungent, Sweet",
+            "composition": [
+                7,
+                7
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 14,
+        "fields": {
+            "name": "Durban Poison",
+            "image": "images-to-use/products/14.webp",
+            "short_description": "Durban Poison has a sweet, earthy aroma and a cerebral, uplifting high that can help with depression, fatigue, and stress.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 8,
+            "price": 20.71,
+            "previous_price": 21.99,
+            "effects": "Relaxation, Euphoria, Happiness, Sleepiness, Appetite stimulation",
+            "may_relieve": "Depression, Anxiety, Stress, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Muscle spasms",
+            "aromas": "Earthy, Herbal, Piney, Spicy, Woody",
+            "composition": [
+                14,
+                12
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 15,
+        "fields": {
+            "name": "Cherry Pie",
+            "image": "images-to-use/products/15.webp",
+            "short_description": "Cherry Pie has a sweet, fruity aroma and a relaxing, full-body high that can help with pain, insomnia, and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 7,
+            "price": 8.95,
+            "previous_price": 0,
+            "effects": "Relaxation, Euphoria, Happiness, Upliftedness, Sleepiness, Pain relief",
+            "may_relieve": "Depression, Stress, Anxiety, Chronic pain, Inflammation, Headaches, Migraines, Nausea, Fatigue",
+            "aromas": "Earthy, Piney, Spicy, Woody",
+            "composition": [
+                3,
+                1
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 16,
+        "fields": {
+            "name": "Blueberry Kush",
+            "image": "images-to-use/products/16.webp",
+            "short_description": "Enjoy a sweet and fruity flavor with this indica-dominant strain. With a calming and relaxing effect, it's perfect for unwinding at the end of a long day. May relieve stress and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 1,
+            "price": 20.99,
+            "previous_price": 22.99,
+            "effects": "Upliftedness, Happiness, Euphoria, Relaxation, Creativity",
+            "may_relieve": "Chronic pain, Insomnia, Stress, Depression, Anxiety, Muscle spasms, Headaches, Migraines, Nausea",
+            "aromas": "Earthy, Herbal, Piney, Sour, Sweet",
+            "composition": [
+                8,
+                2
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 17,
+        "fields": {
+            "name": "Lemon Haze",
+            "image": "images-to-use/products/17.webp",
+            "short_description": "This sativa-dominant strain offers a refreshing and citrusy flavor. With an energetic and uplifting effect, it's great for starting your day off on the right foot. May relieve fatigue and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 29.72,
+            "previous_price": 32.99,
+            "effects": "Relaxation, Happiness, Euphoria, Appetite stimulation",
+            "may_relieve": "Stress, Anxiety, Bad Moods, Sleep Deprivation, Pain, Appetite, Focus, Nausea, Inflammation",
+            "aromas": "Pineapple, Blueberry, Earthy, Lemon",
+            "composition": [
+                11,
+                15
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 18,
+        "fields": {
+            "name": "Watermelon Zkittlez",
+            "image": "images-to-use/products/18.webp",
+            "short_description": "A balanced hybrid with a fruity and refreshing taste. Known for its euphoric and uplifting effects, it's a great choice for socializing with friends. May relieve pain and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 4,
+            "price": 7.32,
+            "previous_price": 0,
+            "effects": "Pain relief, Relaxation, Euphoria, Sleepiness",
+            "may_relieve": "Headaches, Muscle Tension, Insomnia, Depression, Inflammation, Appetite, Stress, Cramps, Lack of Creativity",
+            "aromas": "Mango, Peppery, Diesel, Minty, Pine",
+            "composition": [
+                10,
+                14
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 19,
+        "fields": {
+            "name": "Pineapple Express",
+            "image": "images-to-use/products/19.webp",
+            "short_description": "This sativa-dominant strain offers a tropical and sweet flavor. With a creative and energetic effect, it's perfect for sparking inspiration and getting things done. May relieve stress and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 24.91,
+            "previous_price": 27.99,
+            "effects": "Euphoria, Relaxation, Upliftedness, Happiness, Creativity",
+            "may_relieve": "Anxiety, Stress, Sour Moods, Pain, Sleep Deprivation, Appetite Loss, Nausea, Inflammation, Lack of focus",
+            "aromas": "Grape, Spicy, Floral, Berry, Woody",
+            "composition": [
+                2,
+                2
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 20,
+        "fields": {
+            "name": "Gorilla Glue",
+            "image": "images-to-use/products/20.webp",
+            "short_description": "An indica-dominant strain with a pungent and earthy taste. Known for its relaxing and sedative effects, it's perfect for winding down at the end of the day. May relieve pain and insomnia.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 7,
+            "price": 169.99,
+            "previous_price": 229.99,
+            "effects": "Psychedelic experience, Euphoria, Relaxation, Spiritual awakening",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD, Loss of appetite",
+            "aromas": "Lime, Sweet, Herbal, Skunky",
+            "composition": [
+                15,
+                4
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 21,
+        "fields": {
+            "name": "Jack Herer",
+            "image": "images-to-use/products/21.webp",
+            "short_description": "This sativa-dominant strain offers a spicy and earthy flavor. With an energetic and uplifting effect, it's perfect for enhancing creativity and productivity. May relieve anxiety and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 2,
+            "price": 29.76,
+            "previous_price": 32.99,
+            "effects": "Relaxation, Euphoria, Upliftedness, Happiness, Creativity",
+            "may_relieve": "Pain, Insomnia, Depression, Anxiety, Inflammation, Headaches, Nausea",
+            "aromas": "Orange, Gassy, Vanilla, Fruity",
+            "composition": [
+                12,
+                3
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 22,
+        "fields": {
+            "name": "Sour Diesel",
+            "image": "images-to-use/products/22.webp",
+            "short_description": "A popular sativa-dominant strain with a diesel-like aroma. Known for its cerebral and energizing effects, it's great for starting your day off with a boost. May relieve stress and pain.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 11.86,
+            "previous_price": 0,
+            "effects": "Relaxation, Euphoria, Hunger, Sociability, Giggles",
+            "may_relieve": "Stress, Anxiety, Depression, Insomnia, Inflammation, Chronic pain, Headaches, PTSD, Nausea",
+            "aromas": "Lavender, Citrus, Cheese, Nutty",
+            "composition": [
+                8,
+                1
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 23,
+        "fields": {
+            "name": "OG Kush",
+            "image": "images-to-use/products/23.webp",
+            "short_description": "An indica-dominant strain with an earthy and piney taste. Known for its relaxing and euphoric effects, it's perfect for winding down after a long day. May relieve anxiety and insomnia.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 4,
+            "price": 21.76,
+            "previous_price": 23.99,
+            "effects": "Relaxation, Upliftedness, Euphoria, Happiness, Creativity, Focus",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, Migraines, PTSD",
+            "aromas": "Strawberry, Minty, Earthy, Tropical",
+            "composition": [
+                12,
+                4
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 24,
+        "fields": {
+            "name": "Strawberry Cough",
+            "image": "images-to-use/products/24.webp",
+            "short_description": "A sativa-dominant strain with a sweet and berry-like taste. With a creative and energetic effect, it's perfect for enhancing social interactions and sparking inspiration. May relieve stress and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 1,
+            "price": 23.09,
+            "previous_price": 24.99,
+            "effects": "Relaxation, Upliftedness, Euphoria, Happiness, Focus, Sleepiness",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD",
+            "aromas": "Chocolate, Coffee, Hazelnut, Woody",
+            "composition": [
+                1,
+                11
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 25,
+        "fields": {
+            "name": "Northern Lights",
+            "image": "images-to-use/products/25.webp",
+            "short_description": "An indica-dominant strain with a sweet and earthy taste. Known for its relaxing and sedative effects, it's perfect for winding down before bedtime. May relieve pain and insomnia.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 5,
+            "price": 143.35,
+            "previous_price": 159.99,
+            "effects": "Upliftedness, Happiness, Euphoria, Energy boost, Creativity",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD, Muscle spasms",
+            "aromas": "Apple, Rose, Ginger, Sour",
+            "composition": [
+                14,
+                14
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 26,
+        "fields": {
+            "name": "Chemdawg",
+            "image": "images-to-use/products/26.webp",
+            "short_description": "A hybrid strain with a pungent and diesel-like aroma. With a cerebral and euphoric effect, it's perfect for enhancing creativity and productivity. May relieve stress and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 7,
+            "price": 185.75,
+            "previous_price": 0,
+            "effects": "Relaxation, Euphoria, Happiness, Pain relief, Appetite stimulation",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD, Muscle spasms, Headaches",
+            "aromas": "Honey, Apricot, Sage, Butter",
+            "composition": [
+                13,
+                12
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 27,
+        "fields": {
+            "name": "Gelato",
+            "image": "images-to-use/products/27.webp",
+            "short_description": "A balanced hybrid with a sweet and fruity flavor. Known for its relaxing and euphoric effects, it's perfect for unwinding after a long day. May relieve pain and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 5,
+            "price": 69.54,
+            "previous_price": 79.99,
+            "effects": "Relaxation, Euphoria, Happiness, Appetite stimulation, Giggles",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD, Loss of appetite, Muscle spasms",
+            "aromas": "Cherry, Menthol, Tangy, Pungent, Chocolatey",
+            "composition": [
+                7,
+                7
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 28,
+        "fields": {
+            "name": "White Widow",
+            "image": "images-to-use/products/28.webp",
+            "short_description": "A balanced hybrid with an earthy and woody taste. Known for its cerebral and uplifting effects, it's great for sparking creativity and enhancing social interactions. May relieve stress and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 13.74,
+            "previous_price": 16.99,
+            "effects": "Relaxation, Euphoria, Happiness, Appetite stimulation, Sleepiness",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD, Loss of appetite, Muscle spasms, Headaches",
+            "aromas": "Bubblegum, Grassy, Cinnamon, Buttery",
+            "composition": [
+                14,
+                9
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 29,
+        "fields": {
+            "name": "Girl Scout Cookies",
+            "image": "images-to-use/products/29.webp",
+            "short_description": "A hybrid strain with a sweet and earthy flavor. With a creative and uplifting effect, it's perfect for enhancing focus and productivity. May relieve anxiety and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 3,
+            "price": 199.49,
+            "previous_price": 249.99,
+            "effects": "Relaxation, Euphoria, Happiness, Sleepiness, Appetite stimulation",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD, Loss of appetite, Muscle spasms, Headaches, Migraines",
+            "aromas": "Blackberry, Hops, Caramel, Earthy",
+            "composition": [
+                17,
+                14
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 30,
+        "fields": {
+            "name": "Maui Wowie",
+            "image": "images-to-use/products/30.webp",
+            "short_description": "A sativa-dominant strain with a tropical and fruity taste. Known for its energetic and uplifting effects, it's great for starting your day off on the right foot. May relieve stress and fatigue.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 4,
+            "price": 330.0,
+            "previous_price": 399.99,
+            "effects": "Mental clarity, Euphoria, Upliftedness, Happiness, Energy boost",
+            "may_relieve": "Stress, Anxiety, Depression, Insomnia, Inflammation, Chronic pain, Headaches, PTSD, Nausea, Muscle spasms",
+            "aromas": "Grapefruit, Sandalwood, Sweet, Sour",
+            "composition": [
+                15,
+                5
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 31,
+        "fields": {
+            "name": "Apple Fritter",
+            "image": "images-to-use/products/31.webp",
+            "short_description": "A hybrid strain with a sweet and cinnamon-like flavor. Known for its calming and relaxing effects, it's great for unwinding after a long day. May relieve anxiety and pain.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 117.99,
+            "previous_price": 0,
+            "effects": "Relaxation, Happiness, Appetite suppression, Focus, Productivity",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD, Loss of appetite, Muscle spasms, Headaches, Migraines, Seizures",
+            "aromas": "Peach, Spicy, Herbal, Earthy",
+            "composition": [
+                8,
+                16
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 32,
+        "fields": {
+            "name": "Alien OG",
+            "image": "images-to-use/products/32.webp",
+            "short_description": "An indica-dominant strain with a spicy and earthy taste. Known for its sedative and relaxing effects, it's perfect for winding down before bedtime. May relieve insomnia and pain.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 8.14,
+            "previous_price": 10.99,
+            "effects": "Euphoria, Relaxation, Upliftedness, Happiness, Giggles",
+            "may_relieve": "Pain, Anxiety, Depression, Insomnia, Inflammation, Nausea, PTSD, Loss of appetite, Muscle spasms, Headaches, Migraines, Seizures, Chronic pain",
+            "aromas": "Citrus, Pine, Berry, Spicy",
+            "composition": [
+                9,
+                6
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 33,
+        "fields": {
+            "name": "Lemon Cake",
+            "image": "images-to-use/products/33.webp",
+            "short_description": "A sativa-dominant strain with a sweet and citrusy flavor. With an energetic and uplifting effect, it's perfect for enhancing creativity and productivity. May relieve stress and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 2,
+            "price": 44.55,
+            "previous_price": 49.99,
+            "effects": "Mental stimulation, Upliftedness, Euphoria, Creativity, Sociability",
+            "may_relieve": "Pain, Depression, Insomnia, Inflammation, Nausea, PTSD, Loss of appetite, Muscle spasms, Headaches, Migraines, Seizures, Chronic pain, Epilepsy",
+            "aromas": "Minty, Earthy, Floral, Woody, Sweet",
+            "composition": [
+                13,
+                17
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 34,
+        "fields": {
+            "name": "Mendo Breath",
+            "image": "images-to-use/products/34.webp",
+            "short_description": "An indica-dominant strain with a sweet and earthy taste. Known for its relaxing and sedative effects, it's perfect for unwinding at the end of the day. May relieve pain and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 8,
+            "price": 45.99,
+            "previous_price": 51.99,
+            "effects": "Relaxation, Euphoria, Hunger, Sociability, Giggles, Creativity",
+            "may_relieve": "Pain, Inflammation, Stress, Anxiety, Depression, Nausea, Insomnia, Headaches",
+            "aromas": "Fruity, Herbal, Peppery, Cheese",
+            "composition": [
+                12,
+                16
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 35,
+        "fields": {
+            "name": "Tangerine Dream",
+            "image": "images-to-use/products/35.webp",
+            "short_description": "A sativa-dominant strain with a citrusy and tangy taste. Known for its energetic and uplifting effects, it's great for starting your day off on the right foot. May relieve depression and fatigue.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 4,
+            "price": 39.46,
+            "previous_price": 44.99,
+            "effects": "Relaxation, Upliftedness, Euphoria, Happiness, Focus",
+            "may_relieve": "Insomnia, Anxiety, Depression, Nausea, Stress, Discomfort, Painful cramps, Irritability",
+            "aromas": "Grape, Tropical, Vanilla, Nutty, Sour",
+            "composition": [
+                13,
+                6
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 36,
+        "fields": {
+            "name": "Banana Kush",
+            "image": "images-to-use/products/36.webp",
+            "short_description": "An indica-dominant strain with a sweet and tropical flavor. Known for its relaxing and euphoric effects, it's perfect for winding down after a long day. May relieve pain and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 8,
+            "price": 16.55,
+            "previous_price": 0,
+            "effects": "Euphoria, Happiness, Mental stimulation, Upliftedness, Sociability",
+            "may_relieve": "Depression, Anxiety, Insomnia, Stress, Fatigue, Irritability, Lack of focus",
+            "aromas": "Skunky, Diesel, Sage, Butter",
+            "composition": [
+                16,
+                14
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 37,
+        "fields": {
+            "name": "Purple Punch",
+            "image": "images-to-use/products/37.webp",
+            "short_description": "A hybrid strain with a fruity and grape-like flavor. Known for its relaxing and sedative effects, it's perfect for unwinding before bedtime. May relieve stress and pain.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 1,
+            "price": 18.79,
+            "previous_price": 21.99,
+            "effects": "Pain relief, Relaxation, Euphoria, Happiness, Giggles",
+            "may_relieve": "Inflammation, Pain, Nausea, Stress, Depression, Anxiety, Headaches",
+            "aromas": "Chocolate, Coffee, Honey, Lavender",
+            "composition": [
+                13,
+                5
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 38,
+        "fields": {
+            "name": "Gelato Cake",
+            "image": "images-to-use/products/38.webp",
+            "short_description": "A hybrid strain with a sweet and creamy flavor. With a calming and relaxing effect, it's perfect for unwinding after a long day. May relieve anxiety and depression.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 2,
+            "price": 29.85,
+            "previous_price": 34.99,
+            "effects": "Euphoria, Relaxation, Upliftedness, Happiness, Productivity",
+            "may_relieve": "Depression, Anxiety, Stress, Lack of focus, Nausea, Insomnia, Irritability",
+            "aromas": "Ammonia, Apricot, Basil, Cherry, Chestnut",
+            "composition": [
+                1,
+                11
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 39,
+        "fields": {
+            "name": "Mimosa",
+            "image": "images-to-use/products/39.webp",
+            "short_description": "A sativa-dominant strain with a sweet and fruity flavor. Known for its energetic and uplifting effects, it's great for enhancing social interactions. May relieve stress and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 5,
+            "price": 19.5,
+            "previous_price": 23.99,
+            "effects": "Relaxation, Euphoria, Happiness, Giggles, Appetite stimulation",
+            "may_relieve": "Pain relief, Relaxation, Anti-anxiety, Anti-inflammatory, Headache relief, Nausea relief",
+            "aromas": "Cinnamon, Coconut, Ginger, Haze",
+            "composition": [
+                6,
+                16
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 40,
+        "fields": {
+            "name": "Blackberry Kush",
+            "image": "images-to-use/products/40.webp",
+            "short_description": "An indica-dominant strain with a sweet and berry-like taste. Known for its relaxing and sedative effects, it's perfect for winding down at the end of the day. May relieve pain and insomnia.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 8,
+            "price": 30.99,
+            "previous_price": 39.99,
+            "effects": "Mental stimulation, Euphoria, Upliftedness, Happiness, Creativity",
+            "may_relieve": "Inflammation, Pain, Anxiety, Depression, Insomnia, Fatigue, Lack of focus",
+            "aromas": "Leather, Lemon, Lime, Mango",
+            "composition": [
+                16,
+                15
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 41,
+        "fields": {
+            "name": "Headband",
+            "image": "images-to-use/products/41.webp",
+            "short_description": "A hybrid strain with a diesel-like aroma. Known for its cerebral and euphoric effects, it's perfect for enhancing creativity and focus. May relieve stress and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 6,
+            "price": 68.0,
+            "previous_price": 89.99,
+            "effects": "Relaxation, Euphoria, Upliftedness, Happiness, Productivity",
+            "may_relieve": "Anxiety, Depression, Nausea, Insomnia, Pain, Stress, Inflammation",
+            "aromas": "Melon, Mint, Musty, Orange",
+            "composition": [
+                8,
+                10
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 42,
+        "fields": {
+            "name": "Platinum OG",
+            "image": "images-to-use/products/42.webp",
+            "short_description": "An indica-dominant strain with a earthy and piney taste. Known for its relaxing and sedative effects, it's perfect for unwinding before bedtime. May relieve pain and insomnia.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 3,
+            "price": 12.45,
+            "previous_price": 0,
+            "effects": "Euphoria, Creativity, Focus, Motivation, Energy boost, Productivity",
+            "may_relieve": "Inflammation, Pain, Stress, Anxiety, Nausea, Depression, Headaches",
+            "aromas": "Peach, Pear, Rose, Sandalwood",
+            "composition": [
+                15,
+                11
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 43,
+        "fields": {
+            "name": "Strawberry Banana",
+            "image": "images-to-use/products/43.webp",
+            "short_description": "A balanced hybrid with a sweet and fruity flavor. With a calming and relaxing effect, it's perfect for unwinding after a long day. May relieve anxiety and pain.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 7,
+            "price": 26.77,
+            "previous_price": 29.99,
+            "effects": "Pain relief, Relaxation, Hunger, Appetite suppression, Giggles",
+            "may_relieve": "Anxiety, Depression, Insomnia, Stress, Fatigue, Lack of focus, Nausea",
+            "aromas": "Strawberry, Tea, Thyme, Tropical",
+            "composition": [
+                1,
+                15
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 44,
+        "fields": {
+            "name": "Lemon Kush",
+            "image": "images-to-use/products/44.webp",
+            "short_description": "A hybrid strain with a citrusy and earthy taste. Known for its uplifting and energetic effects, it's perfect for starting your day off on the right foot. May relieve depression and fatigue.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 1,
+            "price": 15.38,
+            "previous_price": 17.99,
+            "effects": "Upliftedness, Happiness, Euphoria, Relaxation, Sociability, Anti-anxiety",
+            "may_relieve": "Stress, Anxiety, Depression, Pain, Inflammation, Nausea, Insomnia",
+            "aromas": "Vanilla, Violet, Wine, Butterscotch",
+            "composition": [
+                16,
+                11
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 45,
+        "fields": {
+            "name": "Cherry AK-47",
+            "image": "images-to-use/products/45.webp",
+            "short_description": "A sativa-dominant strain with a sweet and cherry-like flavor. With a creative and uplifting effect, it's perfect for sparking inspiration and productivity. May relieve stress and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 5,
+            "price": 188.99,
+            "previous_price": 219.99,
+            "effects": "Psychedelic experience, Euphoria, Relaxation, Spiritual awakening, Deep introspection",
+            "may_relieve": "Pain, Anxiety, Depression, Nausea, Inflammation, Lack of focus, Insomnia",
+            "aromas": "Watermelon, Yeasty, Yogurt, Zesty",
+            "composition": [
+                10,
+                4
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 46,
+        "fields": {
+            "name": "Sherbert",
+            "image": "images-to-use/products/46.webp",
+            "short_description": "A hybrid strain with a sweet and creamy flavor. Known for its relaxing and euphoric effects, it's perfect for unwinding at the end of the day. May relieve anxiety and pain.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 3,
+            "price": 141.0,
+            "previous_price": 159.99,
+            "effects": "Relaxation, Euphoria, Happiness, Sociability, Giggles, Sleepiness",
+            "may_relieve": "Pain relief, Relaxation, Anti-anxiety, Anti-inflammatory, Headache relief, Nausea relief",
+            "aromas": "Apple, Apricot, Cherry, Chocolaty",
+            "composition": [
+                15,
+                13
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 47,
+        "fields": {
+            "name": "Purple Urkle",
+            "image": "images-to-use/products/47.webp",
+            "short_description": "An indica-dominant strain with a sweet grape-like flavor, perfect for unwinding before bedtime. A hybrid strain with a sweet creamy flavor, ideal for relaxing with friends. Both may relieve pain, insomnia, stress, and anxiety.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 7,
+            "price": 31.77,
+            "previous_price": 34.99,
+            "effects": "Euphoria, Motivation, Focus, Productivity, Anti-depressant",
+            "may_relieve": "Inflammation, Pain, Anxiety, Depression, Insomnia, Fatigue, Lack of focus",
+            "aromas": "Peppery, Sweet, Flowery, Buttery",
+            "composition": [
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 48,
+        "fields": {
+            "name": "Orange Creamsicle",
+            "image": "images-to-use/products/48.webp",
+            "short_description": "A sativa-dominant strain with a tangy and fruity flavor, similar to the popular candy. With an energetic and creative effect, it's perfect for sparking inspiration and motivation. May relieve depression and fatigue.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 8,
+            "price": 26.0,
+            "previous_price": 27.99,
+            "effects": "Relaxation, Upliftedness, Euphoria, Happiness, Appetite stimulation, Sexual arousal",
+            "may_relieve": "Stress, Depression, Anxiety, Insomnia, Nausea, Pain, Inflammation",
+            "aromas": "Spicy, Fruity, Savory, Minty",
+            "composition": [
+                11,
+                3
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 49,
+        "fields": {
+            "name": "Blue Raspberry",
+            "image": "images-to-use/products/49.webp",
+            "short_description": "A balanced hybrid with a sweet and creamy flavor, reminiscent of the classic dessert. With a calming and uplifting effect, it's perfect for unwinding after a long day. May relieve pain and anxiety",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 5,
+            "price": 30.3,
+            "previous_price": 32.99,
+            "effects": "Pain relief, Relaxation, Euphoria, Sleepiness, Appetite stimulation, Anti-inflammatory",
+            "may_relieve": "Pain, Anxiety, Depression, Nausea, Inflammation, Lack of focus, Insomnia",
+            "aromas": "Woody, Earthy, Nutty, Minty",
+            "composition": [
+                15,
+                10
+            ]
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 50,
+        "fields": {
+            "name": "Strawberry Cheesecake",
+            "image": "images-to-use/products/50.webp",
+            "short_description": "Introducing this premium strain, a sativa-dominant hybrid that is sure to elevate your experience. Known for its sweet, berry-like aroma and balanced effects, This strain offers a relaxed and uplifting high that is perfect for any occasion.",
+            "description": "At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.\n\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer.",
+            "category": 8,
+            "price": 44.0,
+            "previous_price": 49.99,
+            "effects": "Upliftedness, Happiness, Euphoria, Energy boost, Creativity, Focus, Motivation",
+            "may_relieve": "Relaxation, Pain relief, Anti-inflammatory, Anti-anxiety, Stress relief, Headache relief",
+            "aromas": "Herbal, Citrusy, Piney, Cheesy",
+            "composition": [
+                17,
+                8
+            ]
+        }
+    }
+]

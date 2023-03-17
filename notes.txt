@@ -1,6 +1,2 @@
-["Flowers", "Edibles", "Concentrates", "Mushrooms", "Tropicals", "Pre-rolls", "Hybrids", "Accessories"]
-
-Now create fixtures for the following Product Compositions in my weed ecommerce store. The name of the store is 'The Pot Shop'. The name of the app is store. 
-['Myrcene', 'CBD', 'THC', 'Limonene', 'Pinene', 'Oils', 'Trichomes', 'Flavonoids', 'Terpenes']
-
-Here is the model for the fixture I want you to create:
+Categories: ["Flowers", "Edibles", "Concentrates", "Mushrooms", "Tropicals", "Pre-rolls", "Hybrids", "Accessories"]
+Compositions: ['Myrcene', 'CBD', 'THC', 'Limonene', 'Pinene', 'Oils', 'Trichomes', 'Flavonoids', 'Terpenes']

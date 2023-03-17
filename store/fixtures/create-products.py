@@ -1,35 +1,4 @@
-class Weight(models.Model):
-    WEIGHT_CHOICES = (
-        ('g', 'Gram'),
-        ('oz', 'Ounce (28 grams)'),
-        ('lb', 'Pound (16 ounces)'),
-    )
-
-    quantity = models.DecimalField(max_digits=4, decimal_places=2)
-    unit = models.CharField(max_length=20, choices=WEIGHT_CHOICES)
-
-    def as_fraction(self):
-        fraction_form = Fraction(self.quantity).limit_denominator()
-        if fraction_form.denominator == 1:
-            the_fraction = fraction_form.numerator
-        elif fraction_form.numerator > fraction_form.denominator:
-            whole_num = int(fraction_form.numerator / fraction_form.denominator)
-            mixed_fraction = str(fraction_form.numerator % fraction_form.denominator) + "/" + str(fraction_form.denominator)
-            the_fraction = f"{whole_num} {mixed_fraction}"
-        else:
-            the_fraction = str(fraction_form.numerator) + "/" + str(fraction_form.denominator)
-            
-        return the_fraction
-    # Which of the following is the best way to represent the following data in an admin interface: '4 1/2lb', '4 1/2 lb' or any way you can come up with
-
-    def __str__(self):
-        return self.as_fraction() + self.unit
-
-    class Meta:
-        verbose_name = "Weight"
-        verbose_name_plural = "Weights"
-
-
+import os, random, json
 
 info_dict = {
     "names": [
@@ -99,6 +68,7 @@ info_dict = {
         " A hybrid strain with a sweet and creamy flavor, reminiscent of the classic popsicle. Known for its calming and uplifting effects, it's great for relaxing with friends. May relieve stress and anxiety.",
         "A sativa-dominant strain with a tangy and fruity flavor, similar to the popular candy. With an energetic and creative effect, it's perfect for sparking inspiration and motivation. May relieve depression and fatigue.",
         "A balanced hybrid with a sweet and creamy flavor, reminiscent of the classic dessert. With a calming and uplifting effect, it's perfect for unwinding after a long day. May relieve pain and anxiety",
+        "Introducing this premium strain, a sativa-dominant hybrid that is sure to elevate your experience. Known for its sweet, berry-like aroma and balanced effects, This strain offers a relaxed and uplifting high that is perfect for any occasion."
     ],
     "categories": [1, 2, 3, 4, 5, 6, 7, 8],
     # "categories": [
@@ -149,14 +119,14 @@ info_dict = {
         ["Relaxation", "Euphoria", "Happiness", "Giggles", "Appetite stimulation"],
         ["Mental stimulation", "Euphoria", "Upliftedness", "Happiness", "Creativity"],
         ["Relaxation", "Euphoria", "Upliftedness", "Happiness", "Productivity"],
-        ["Euphoria", "Creativity", "Focus", "Motivation", "Energy boost", "Productivity"]
-        ["Pain relief", "Relaxation", "Hunger", "Appetite suppression", "Giggles"]
-        ["Upliftedness", "Happiness", "Euphoria", "Relaxation", "Sociability", "Anti-anxiety"]
-        ["Psychedelic experience", "Euphoria", "Relaxation", "Spiritual awakening", "Deep introspection"]
-        ["Relaxation", "Euphoria", "Happiness", "Sociability", "Giggles", "Sleepiness"]
-        ["Euphoria", "Motivation", "Focus", "Productivity", "Anti-depressant"]
-        ["Relaxation", "Upliftedness", "Euphoria", "Happiness", "Appetite stimulation", "Sexual arousal"]
-        ["Pain relief", "Relaxation", "Euphoria", "Sleepiness", "Appetite stimulation", "Anti-inflammatory"]
+        ["Euphoria", "Creativity", "Focus", "Motivation", "Energy boost", "Productivity"],
+        ["Pain relief", "Relaxation", "Hunger", "Appetite suppression", "Giggles"],
+        ["Upliftedness", "Happiness", "Euphoria", "Relaxation", "Sociability", "Anti-anxiety"],
+        ["Psychedelic experience", "Euphoria", "Relaxation", "Spiritual awakening", "Deep introspection"],
+        ["Relaxation", "Euphoria", "Happiness", "Sociability", "Giggles", "Sleepiness"],
+        ["Euphoria", "Motivation", "Focus", "Productivity", "Anti-depressant"],
+        ["Relaxation", "Upliftedness", "Euphoria", "Happiness", "Appetite stimulation", "Sexual arousal"],
+        ["Pain relief", "Relaxation", "Euphoria", "Sleepiness", "Appetite stimulation", "Anti-inflammatory"],
         ["Upliftedness", "Happiness", "Euphoria", "Energy boost", "Creativity", "Focus", "Motivation"]
     ],
     "may_relieve": [
@@ -213,7 +183,7 @@ info_dict = {
         ['Pain', 'Anxiety', 'Depression', 'Nausea', 'Inflammation', 'Lack of focus', 'Insomnia'],
         ['Relaxation', 'Pain relief', 'Anti-inflammatory', 'Anti-anxiety', 'Stress relief', 'Headache relief'],
     ],
-    "aroma": [
+    "aromas": [
         ['Citrusy', 'Earthy', 'Herbal', 'Piney', 'Sweet'],
         ['Berry', 'Earthy', 'Fruity', 'Grape', 'Sweet'],
         ['Earthy', 'Flowery', 'Herbal', 'Pungent', 'Sweet'],
@@ -260,7 +230,7 @@ info_dict = {
         ['Vanilla', 'Violet', 'Wine', 'Butterscotch'],
         ['Watermelon', 'Yeasty', 'Yogurt', 'Zesty'],
         ['Apple', 'Apricot', 'Cherry', 'Chocolaty'],
-        ["Peppery", "Sweet", "Flowery", "Buttery"]
+        ["Peppery", "Sweet", "Flowery", "Buttery"],
         ["Spicy", "Fruity", "Savory", "Minty"],
         ["Woody", "Earthy", "Nutty", "Minty"],
         ["Herbal", "Citrusy", "Piney", "Cheesy"]
@@ -268,27 +238,66 @@ info_dict = {
     "composition": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 }
 
+names = info_dict["names"]
+short_descriptions = info_dict["descriptions"]
+categories = info_dict["categories"]
+prices = info_dict["prices"]
+previous_prices = info_dict["previous_prices"]
+effects = info_dict["effects"]
+may_relieve = info_dict["may_relieve"]
+aromas = info_dict["aromas"]
+compositions = info_dict["composition"]
+
+fixture = []
+pk = 0
+
+for index, name in enumerate(info_dict["names"]):
+    pk += 1
+    image = f"images-to-use/products/{pk}.webp"
+    description = """At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.
+\nOur products are carefully sourced from trusted suppliers and rigorously tested for quality and potency, so you can trust that you're getting the best possible cannabis products. With discreet and fast shipping options, you can enjoy your products in no time. Shop with us today and experience the best that the world of cannabis has to offer."""
+    
+    fixture.append({
+      "model": "store.product",
+      "pk": pk,
+      "fields": {
+        "name": name,
+        "image": image,
+        "short_description": short_descriptions[index],
+        "description": description,
+        "category": random.choice(categories),
+        "price": prices[index],
+        "previous_price": previous_prices[index],
+        "effects": ", ".join(effects[index]),
+        "may_relieve": ", ".join(may_relieve[index]),
+        "aromas": ", ".join(aromas[index]),
+        "composition": [random.choice(compositions), random.choice(compositions)]
+      }
+    })
+
+with open("store/fixtures/products.json", "w") as products_fixture:
+    products_fixture.write(json.dumps(fixture))
 
 
 
-import random
-
-PRODUCT_PRICES = []
-
-for i in range(50):
-    if "Flowers" in PRODUCT_CATEGORIES[i]:
-        PRODUCT_PRICES.append(round(random.uniform(10, 50), 2))
-    elif "Edibles" in PRODUCT_CATEGORIES[i]:
-        PRODUCT_PRICES.append(round(random.uniform(5, 30), 2))
-    elif "Concentrates" in PRODUCT_CATEGORIES[i]:
-        PRODUCT_PRICES.append(round(random.uniform(20, 200), 2))
-    elif "Mushrooms" in PRODUCT_CATEGORIES[i]:
-        PRODUCT_PRICES.append(round(random.uniform(15, 40), 2))
-    elif "Tropicals" in PRODUCT_CATEGORIES[i]:
-        PRODUCT_PRICES.append(round(random.uniform(10, 40), 2))
-    elif "Pre-rolls" in PRODUCT_CATEGORIES[i]:
-        PRODUCT_PRICES.append(round(random.uniform(5, 15), 2))
-    elif "Hybrids" in PRODUCT_CATEGORIES[i]:
-        PRODUCT_PRICES.append(round(random.uniform(10, 50), 2))
-    elif "Accessories" in PRODUCT_CATEGORIES[i]:
-        PRODUCT_PRICES.append(round(random.uniform(5, 50), 2))
+# [
+#   {
+#     "model": "store.product",
+#     "pk": 1,
+#     "fields": {
+#       "name": "Purple Haze",
+#       "image": "images-to-use/products/1.png",
+#       "short_description": "A classic sativa strain",
+#       "description": "Purple Haze is a classic sativa strain made popular by Jimi Hendrix's 1967 classic. This strain is known for its distinct aroma and uplifting effects. The buds are a bright green color and are covered in trichomes, giving them a frosty appearance. The taste is sweet and earthy, with a hint of grape.",
+#       "category": 1,
+#       "weights": "28g",
+#       "price": 50.0,
+#       "previous_price": 0.0,
+#       "addons": [1, 2],
+#       "effects": "Energetic, Creative, Happy",
+#       "may_relieve": "Depression, Anxiety, Stress",
+#       "aromas": "Earthy, Sweet, Grape",
+#       "composition": [1, 2, 5, 7]
+#     }
+#   }
+# ]

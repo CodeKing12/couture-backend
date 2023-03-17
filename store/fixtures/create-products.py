@@ -252,6 +252,7 @@ fixture = []
 pk = 0
 
 for index, name in enumerate(info_dict["names"]):
+    replacements = ["Starry Night", "Mystic Haze", "Emerald Dream", "Purple Rain", "Sunburst Sativa", "Blueberry Bliss", "Northern Lights Reserve"]
     pk += 1
     image = f"images-to-use/products/{pk}.webp"
     description = """At our online cannabis store, we pride ourselves on offering only the highest quality products to our customers. Whether you're looking for premium flower strains, potent concentrates, delicious edibles, or smoking accessories, we have everything you need to enjoy the best possible cannabis experience.

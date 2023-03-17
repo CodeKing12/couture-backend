@@ -2,14 +2,15 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator, MaxValueValidator
-from fractions import Fraction
+from django.utils.text import slugify
 
 # Define helper functions here.
 
 # Create your models here.
 class Product(models.Model):
-    name = models.CharField(max_length=120)
+    name = models.CharField(max_length=120, unique=True)
     image = models.ImageField(upload_to="products/")
+    slug = models.SlugField(max_length=250, auto_created=True)
     short_description = models.CharField(max_length=350)
     description = models.TextField()
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
@@ -24,6 +25,7 @@ class Product(models.Model):
         # Change the name of the image only if the object instance is new (i.e. it has not yet created a primary key)
         if not self.pk:
             self.image.name = self.name.lower().replace(" ", "-").strip()
+        self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
     def __str__(self):

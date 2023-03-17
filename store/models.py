@@ -19,7 +19,7 @@ class Product(models.Model):
     effects = models.CharField(max_length=100)
     may_relieve = models.CharField(max_length=150)
     aromas = models.CharField(max_length=50)
-    composition = models.ManyToManyField('Ingredient')
+    composition = models.ManyToManyField('Composition')
 
     def save(self, *args, **kwargs): 
         # Change the name of the image only if the object instance is new (i.e. it has not yet created a primary key)
@@ -36,7 +36,7 @@ class Product(models.Model):
         verbose_name_plural = "Products"
 
 
-class Ingredient(models.Model):
+class Composition(models.Model):
     name = models.CharField(max_length=20)
     percentage = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(100)])
 

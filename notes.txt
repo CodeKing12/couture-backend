@@ -1,2 +1,5 @@
 Categories: ["Flowers", "Edibles", "Concentrates", "Mushrooms", "Tropicals", "Pre-rolls", "Hybrids", "Accessories"]
 Compositions: ['Myrcene', 'CBD', 'THC', 'Limonene', 'Pinene', 'Oils', 'Trichomes', 'Flavonoids', 'Terpenes']
+
+
+Changed all fixtures to reflect the original ones used to populate the db

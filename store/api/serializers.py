@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from store.models import Product, Category, Composition
+from store.models import Product, Category, Composition, ProductGroup
 
 class CategorySerializer(ModelSerializer):
     class Meta:
@@ -23,7 +23,7 @@ class ProductSerializer(ModelSerializer):
 
     def to_representation(self, instance):
         request = self.context.get('request')
-        if request and 'display' in request.path:
+        if request and ('display' in request.path or 'groups' in request.path):
             return {
                 'id': instance.id,
                 'name': instance.name,
@@ -43,3 +43,10 @@ class ProductSerializer(ModelSerializer):
             }
         
         return super().to_representation(instance)
+
+class GroupSerializer(ModelSerializer):
+    products = ProductSerializer(many=True)
+
+    class Meta:
+        model = ProductGroup
+        fields = '__all__'

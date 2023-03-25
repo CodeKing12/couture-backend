@@ -3,7 +3,7 @@ from .models import Product, Composition, Addon, Category, ProductGroup, Review
 
 # Register your models here.
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'slug', 'price')
+    list_display = ('name', 'category', 'slug', 'price', 'reviews_aggr')
 
 
 class CategoryAdmin(admin.ModelAdmin):

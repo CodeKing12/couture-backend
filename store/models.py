@@ -33,12 +33,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-    
-    def aggr_reviews(self):
-        aggregate = 0
-        for review in self.review_set.all():
-            aggregate += review.stars
-        return aggregate / self.review_set.count()
 
     class Meta:
         verbose_name = "Product"
@@ -111,7 +105,10 @@ def update_review_aggregate(sender, instance, **kwargs):
     total = 0
     for review in instance.product.review_set.all():
         total += review.stars
-    instance.product.aggregate_reviews = total / instance.product.review_set.count()
+    try:
+        instance.product.reviews_aggr = round(total / instance.product.review_set.count(), 1)
+    except ZeroDivisionError:
+        instance.product.reviews_aggr = 0
     instance.product.save()
 
 # I'm creating the backend, using Django, for an ecommerce store that sells different categories of weed. 

@@ -1,7 +1,8 @@
 from .models import Product, ProductGroup, Category
 from store.api.serializers import ProductSerializer, GroupSerializer, CategorySerializer
 from rest_framework import generics
-from rest_framework import filters
+from django_filters import rest_framework as filters
+from .filters import ProductFilter
 
 # Create your views here.
 class ProductList(generics.ListCreateAPIView):
@@ -26,5 +27,6 @@ class CategoryDetails(generics.RetrieveUpdateAPIView):
 class SearchProducts(generics.ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    filter_backends = [filters.SearchFilter]
-    search_fields = ["name", "short_description"]
+    filter_backends = [filters.DjangoFilterBackend]
+    filterset_class = ProductFilter
+    # filterset_fields = ["name", "short_description", "category", "price", "composition"]

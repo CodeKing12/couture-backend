@@ -8,6 +8,7 @@ class ProductFilter(filters.FilterSet):
     composition = filters.CharFilter(field_name='composition__name', lookup_expr='exact')
     min_price = filters.NumberFilter(field_name='price', lookup_expr='gte')
     max_price = filters.NumberFilter(field_name='price', lookup_expr='lte')
+    review_count = filters.NumberFilter(field_name="review", lookup_expr='exact')
 
     class Meta:
         model = Product

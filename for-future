@@ -292,3 +292,9 @@ for i in range(50):
         PRODUCT_PRICES.append(round(random.uniform(10, 50), 2))
     elif "Accessories" in PRODUCT_CATEGORIES[i]:
         PRODUCT_PRICES.append(round(random.uniform(5, 50), 2))
+
+for product in all_products:
+    image = product.image
+    filename = image.url.split("/")[-1]
+    product.image = f'products/{filename}'
+    product.save()

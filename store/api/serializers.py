@@ -43,6 +43,7 @@ class ProductSerializer(ModelSerializer):
                 },
                 'price': instance.price,
                 'previous_price': instance.previous_price,
+                'reviews': instance.aggr_reviews(),
                 'composition': [
                     {
                         "name": c.name,

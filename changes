@@ -1,0 +1,3 @@
+:mark Corrected the path of all product images
+:mark Installed and setup django-archive to back up db
+:mark Updated serializers to show the reviews aggregate

@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'authentication.apps.AuthenticationConfig',
     'store.apps.StoreConfig',
+    'rest_framework',
     'django_filters',
-    'rest_framework'
+    'django_archive'
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,6 @@ AUTH_USER_MODEL = "authentication.Account"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+# Settings for the django_archive module
+ARCHIVE_DIRECTORY = BASE_DIR / 'db-backups'

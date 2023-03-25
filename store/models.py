@@ -57,7 +57,7 @@ class Addon(models.Model):
 
 
 class Category(models.Model):
-    title = models.CharField(unique=True, max_length=50)
+    name = models.CharField(unique=True, max_length=50)
     slug = models.SlugField(max_length=70, auto_created=True)
     description = models.TextField(max_length=650)
 
@@ -66,11 +66,11 @@ class Category(models.Model):
         verbose_name_plural = "Categories"
     
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.title)
+        self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.title
+        return self.name
 
 
 class ProductGroup(models.Model):

@@ -1,10 +1,19 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework.serializers import HyperlinkedRelatedField, ModelSerializer
 from store.models import Product, Category, Composition, ProductGroup
 
 class CategorySerializer(ModelSerializer):
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = ['name', 'slug', 'description']
+
+    def to_representation(self, instance):
+        request = self.context.get('request')
+        if request and 'categor' not in request.path:
+            return {
+                "name": instance.name,
+                "slug": instance.slug
+            }
+        return super().to_representation(instance)
 
 
 class CompositionSerializer(ModelSerializer):
@@ -14,7 +23,7 @@ class CompositionSerializer(ModelSerializer):
 
 
 class ProductSerializer(ModelSerializer):
-    category = CategorySerializer()
+    category = CategorySerializer(read_only=True)
     composition = CompositionSerializer(many=True)
 
     class Meta:
@@ -23,13 +32,13 @@ class ProductSerializer(ModelSerializer):
 
     def to_representation(self, instance):
         request = self.context.get('request')
-        if request and ('display' in request.path or 'groups' in request.path):
+        if request and ('display' in request.path or 'groups' in request.path or 'search' in request.path):
             return {
                 'id': instance.id,
                 'name': instance.name,
                 'slug': instance.slug,
                 'category': {
-                    "name": instance.category.title,
+                    "name": instance.category.name,
                     "slug": instance.category.slug
                 },
                 'price': instance.price,
@@ -43,6 +52,7 @@ class ProductSerializer(ModelSerializer):
             }
         
         return super().to_representation(instance)
+
 
 class GroupSerializer(ModelSerializer):
     products = ProductSerializer(many=True)

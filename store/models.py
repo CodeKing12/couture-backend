@@ -1,11 +1,12 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from django.core.exceptions import ValidationError
+from django.db.models.signals import post_save, post_delete
+from django.dispatch import receiver
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.text import slugify
 from django.utils import timezone
 
-# Define helper functions here.
+# Define helper functions and classes here.
 
 # Create your models here.
 class Product(models.Model):
@@ -21,6 +22,7 @@ class Product(models.Model):
     may_relieve = models.CharField(max_length=150)
     aromas = models.CharField(max_length=50)
     composition = models.ManyToManyField('Composition')
+    reviews_aggr = models.FloatField(auto_created=True, null=True, default=0)
 
     def save(self, *args, **kwargs): 
         # Change the name of the image only if the object instance is new (i.e. it has not yet created a primary key)
@@ -36,7 +38,7 @@ class Product(models.Model):
         aggregate = 0
         for review in self.review_set.all():
             aggregate += review.stars
-        return round(aggregate / self.review_set.count())
+        return aggregate / self.review_set.count()
 
     class Meta:
         verbose_name = "Product"
@@ -101,6 +103,16 @@ class Review(models.Model):
 
     def __str__(self):
         return self.product.name
+
+    
+@receiver(post_save, sender=Review)
+@receiver(post_delete, sender=Review)
+def update_review_aggregate(sender, instance, **kwargs):
+    total = 0
+    for review in instance.product.review_set.all():
+        total += review.stars
+    instance.product.aggregate_reviews = total / instance.product.review_set.count()
+    instance.product.save()
 
 # I'm creating the backend, using Django, for an ecommerce store that sells different categories of weed. 
 

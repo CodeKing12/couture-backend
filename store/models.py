@@ -3,6 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.text import slugify
+from django.utils import timezone
 
 # Define helper functions here.
 
@@ -30,6 +31,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def aggr_reviews(self):
+        aggregate = 0
+        for review in self.review_set.all():
+            aggregate += review.stars
+        return round(aggregate / self.review_set.count())
 
     class Meta:
         verbose_name = "Product"
@@ -83,6 +90,17 @@ class ProductGroup(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):
+    product = models.ForeignKey('Product', on_delete=models.CASCADE)
+    stars = models.IntegerField(validators=[MinValueValidator(1),MaxValueValidator(5)])
+    review = models.CharField(max_length=250)
+    user = models.ForeignKey('authentication.Account', on_delete=models.CASCADE)
+    date = models.DateField(default=timezone.now, auto_created=True)
+
+    def __str__(self):
+        return self.product.name
 
 # I'm creating the backend, using Django, for an ecommerce store that sells different categories of weed. 
 

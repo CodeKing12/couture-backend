@@ -1,0 +1,222 @@
+[
+    {
+      "model": "store.review",
+      "pk": 1,
+      "fields": {
+        "product": 1,
+        "stars": 4,
+        "review": "Great product!",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 2,
+      "fields": {
+        "product": 1,
+        "stars": 3,
+        "review": "It's okay.",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 3,
+      "fields": {
+        "product": 1,
+        "stars": 5,
+        "review": "I love it!",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 4,
+      "fields": {
+        "product": 2,
+        "stars": 5,
+        "review": "Best purchase ever!",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 5,
+      "fields": {
+        "product": 2,
+        "stars": 2,
+        "review": "Not worth the money.",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 6,
+      "fields": {
+        "product": 2,
+        "stars": 4,
+        "review": "Decent product.",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 7,
+      "fields": {
+        "product": 3,
+        "stars": 3,
+        "review": "Not bad, but could be better.",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 8,
+      "fields": {
+        "product": 3,
+        "stars": 4,
+        "review": "Good product.",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 9,
+      "fields": {
+        "product": 3,
+        "stars": 2,
+        "review": "Disappointing.",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+      "model": "store.review",
+      "pk": 10,
+      "fields": {
+        "product": 4,
+        "stars": 5,
+        "review": "Amazing!",
+        "user": 1,
+        "date": "2023-03-26"
+      }
+    },
+    {
+        "model": "store.review",
+        "pk": 11,
+        "fields": {
+          "product": 4,
+          "stars": 4,
+          "review": "Great product!",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 12,
+        "fields": {
+          "product": 4,
+          "stars": 3,
+          "review": "It's okay.",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 13,
+        "fields": {
+          "product": 5,
+          "stars": 5,
+          "review": "I love it!",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 14,
+        "fields": {
+          "product": 5,
+          "stars": 5,
+          "review": "Best purchase ever!",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 15,
+        "fields": {
+          "product": 5,
+          "stars": 2,
+          "review": "Not worth the money.",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 16,
+        "fields": {
+          "product": 6,
+          "stars": 4,
+          "review": "Decent product.",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 17,
+        "fields": {
+          "product": 6,
+          "stars": 3,
+          "review": "Not bad, but could be better.",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 18,
+        "fields": {
+          "product": 6,
+          "stars": 4,
+          "review": "Good product.",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 19,
+        "fields": {
+          "product": 7,
+          "stars": 2,
+          "review": "Disappointing.",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      },
+      {
+        "model": "store.review",
+        "pk": 20,
+        "fields": {
+          "product": 7,
+          "stars": 5,
+          "review": "Amazing!",
+          "user": 1,
+          "date": "2023-03-26"
+        }
+      }
+]  

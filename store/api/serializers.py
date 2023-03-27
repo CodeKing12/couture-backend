@@ -35,6 +35,8 @@ class ProductSerializer(ModelSerializer):
         if request and ('display' in request.path or 'groups' in request.path or 'search' in request.path):
             return {
                 'id': instance.id,
+                'image': instance.image.url,
+                # 'thumbnail': instance.image.thumbnail_url,
                 'name': instance.name,
                 'slug': instance.slug,
                 'category': {

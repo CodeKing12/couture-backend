@@ -5,6 +5,7 @@ from django.dispatch import receiver
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.text import slugify
 from django.utils import timezone
+from .scripts import upload_image
 
 # Define helper functions and classes here.
 
@@ -26,8 +27,13 @@ class Product(models.Model):
 
     def save(self, *args, **kwargs): 
         # Change the name of the image only if the object instance is new (i.e. it has not yet created a primary key)
-        if not self.pk:
-            self.image.name = self.name.lower().replace(" ", "-").strip()
+        # if not self.pk:
+        image_name = self.name.lower().replace(" ", "-").strip()
+        img_extension = self.image.name.split('/')[-1].split('.')[-1]
+        full_name = f"{image_name}.{img_extension}"
+        image_info = upload_image(self.image.open('rb').read(), full_name, self.category.name)
+        self.image.name = image_info.name
+        self.image.thumbnail_url = image_info.thumbnail_url
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 

@@ -145,8 +145,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 ARCHIVE_DIRECTORY = BASE_DIR / 'db-backups'
 
 # Settings for django-cors-headers
-# CORS_ALLOWED_ORIGINS = [
-#     'https://127.0.0.1:3000'
-# ]
+CORS_ALLOWED_ORIGINS = [
+    'http://127.0.0.1:3000'
+]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True

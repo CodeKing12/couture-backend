@@ -3,6 +3,7 @@ from store.api.serializers import ProductSerializer, GroupSerializer, CategorySe
 from rest_framework import generics
 from django_filters import rest_framework as filters
 from .filters import ProductFilter
+import time
 
 # Create your views here.
 class ProductList(generics.ListCreateAPIView):
@@ -15,6 +16,7 @@ class ProductDetails(generics.RetrieveAPIView):
     serializer_class = ProductSerializer
 
 class GroupDetails(generics.RetrieveAPIView):
+    time.sleep(5)
     lookup_field = "name"
     queryset = ProductGroup.objects.all()
     serializer_class = GroupSerializer

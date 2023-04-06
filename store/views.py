@@ -2,6 +2,7 @@ from .models import Product, ProductGroup, Category
 from store.api.serializers import ProductSerializer, GroupSerializer, CategorySerializer
 from rest_framework import generics
 from django_filters import rest_framework as filters
+from rest_framework.filters import OrderingFilter
 from .filters import ProductFilter
 import time
 
@@ -29,6 +30,7 @@ class CategoryDetails(generics.RetrieveUpdateAPIView):
 class SearchProducts(generics.ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    filter_backends = [filters.DjangoFilterBackend]
+    filter_backends = [filters.DjangoFilterBackend, OrderingFilter]
     filterset_class = ProductFilter
+    ordering_fields = ['name', 'price', 'created_at']
     # filterset_fields = ["name", "short_description", "category", "price", "composition"]

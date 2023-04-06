@@ -24,6 +24,7 @@ class Product(models.Model):
     aromas = models.CharField(max_length=50)
     composition = models.ManyToManyField('Composition')
     reviews_aggr = models.FloatField(auto_created=True, null=True, default=0)
+    created_at = models.DateTimeField(default=timezone.now, auto_created=True)
 
     def save(self, *args, **kwargs): 
         # Change the name of the image only if the object instance is new (i.e. it has not yet created a primary key)

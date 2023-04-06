@@ -1,2 +1,2 @@
-Add review field using a model manager
-Allow filtering by review aggregate
+Add a model field for storing thumbnails of product images or incorporate it directly into the frontend
+Display the Skeleton loader while the image is still loading

@@ -342,3 +342,54 @@ p.image.name = image_info.name
 
 from store.models import Product
 all_p =  Product.objects.all()
+
+
+from rest_framework.serializers import ModelSerializer
+from authentication.models import Account
+from django.contrib.auth.hashers import make_password
+
+class AccountSerializer(ModelSerializer):
+    class Meta:
+        model = Account
+        # fields = ['first_name', 'last_name', 'email', 'password', 'date_joined', 'groups', 'user_permissions']
+        fields = '__all__'
+        extra_kwargs = {
+            'password': {'write_only': True},
+            'date_joined': {'write_only': True},
+            'groups': {'write_only': True},
+            'user_permissions': {'write_only': True},
+        }
+
+    def create(self, validated_data):
+        return Account.objects.create_user(**validated_data)
+
+
+
+
+
+
+
+
+
+from rest_framework.serializers import ModelSerializer
+from authentication.models import Account
+
+class RegistrationSerializer(ModelSerializer):
+    class Meta:
+        model = Account
+        exclude = ['groups', 'user_permissions']
+        extra_kwargs = {
+            'password': {'write_only': True},
+            'date_joined': {'write_only': True},
+            # 'groups': {'write_only': True},
+            # 'user_permissions': {'write_only': True},
+        }
+
+    def create(self, validated_data):
+        return Account.objects.create_user(**validated_data)
+
+class AccountSerializer(ModelSerializer):
+    class Meta:
+        model = Account
+        fields = '__all__'
+        # fields = ['id', 'first_name', 'last_name', 'email', 'last_login', 'is_active', 'is_staff', 'is_superuser', 'is_apiuser', 'is_vendor']

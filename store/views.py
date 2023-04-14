@@ -17,10 +17,13 @@ class ProductDetails(generics.RetrieveAPIView):
     serializer_class = ProductSerializer
 
 class GroupDetails(generics.RetrieveAPIView):
-    time.sleep(5)
     lookup_field = "name"
     queryset = ProductGroup.objects.all()
     serializer_class = GroupSerializer
+
+class CategoryList(generics.ListAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
 
 class CategoryDetails(generics.RetrieveUpdateAPIView):
     lookup_field = "slug"

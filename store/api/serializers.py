@@ -1,5 +1,5 @@
 from rest_framework.serializers import HyperlinkedRelatedField, ModelSerializer
-from store.models import Product, Category, Composition, ProductGroup
+from store.models import Product, Category, Composition, ProductGroup, Cart, CartItem
 
 class CategorySerializer(ModelSerializer):
     class Meta:
@@ -64,3 +64,26 @@ class GroupSerializer(ModelSerializer):
     class Meta:
         model = ProductGroup
         fields = '__all__'
+
+
+class CartItemSerializer(ModelSerializer):
+    product = ProductSerializer(many=True)
+    
+    class Meta:
+        model = CartItem
+        fields = ['id', 'product', 'quantity']
+
+
+class CartSerializer(ModelSerializer):
+    products = CartItemSerializer(many=True)
+
+    class Meta:
+        model = Cart
+        fields = ['id', 'date_created', 'products']
+
+    # def create(self, validated_data):
+    #     cart_items_data = validated_data.pop('cart_items')
+    #     cart = Cart.objects.create(**validated_data)
+    #     for cart_item_data in cart_items_data:
+    #         CartItem.objects.create(cart=cart, **cart_item_data)
+    #     return cart

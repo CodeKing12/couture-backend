@@ -7,5 +7,6 @@ urlpatterns = [
     path('groups/<str:name>/', views.GroupDetails.as_view(), name="group-products"),
     path('categories/', views.CategoryList.as_view(), name="all_categories"),
     path('categories/<slug:slug>/', views.CategoryDetails.as_view(), name="category_products"),
-    path('search/', views.SearchProducts.as_view(), name="search_products")
+    path('search/', views.SearchProducts.as_view(), name="search_products"),
+    path('cart/', views.RetrieveUpdateCart.as_view(), name="add_to_cart")
 ]

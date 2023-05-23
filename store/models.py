@@ -105,7 +105,31 @@ class Review(models.Model):
     def __str__(self):
         return self.product.name
 
-    
+
+class Cart(models.Model):
+    user = models.ForeignKey("authentication.Account", on_delete=models.CASCADE)
+    date_created = models.DateTimeField(default=timezone.now, auto_created=True)
+    products = models.ManyToManyField(Product, through='CartItem')
+
+    def get_total_quantity(self):
+        """
+        Get the total quantity of all products in the cart.
+        """
+        cart_items = self.cartitem_set.all()
+        total_quantity = sum(item.product.price for item in cart_items)
+        return total_quantity
+
+
+class CartItem(models.Model):
+    product = models.ForeignKey("Product", on_delete=models.CASCADE)
+    cart = models.ForeignKey("Cart", on_delete=models.CASCADE)
+    quantity = models.IntegerField(default=1)
+    # addons = models.ManyToManyField("store.Product", related_name="addon")
+
+    def __str__(self):
+        return f"{self.quantity} x {self.product.name}"
+
+
 @receiver(post_save, sender=Review)
 @receiver(post_delete, sender=Review)
 def update_review_aggregate(sender, instance, **kwargs):

@@ -1,10 +1,10 @@
-from .models import Product, ProductGroup, Category
-from store.api.serializers import ProductSerializer, GroupSerializer, CategorySerializer
+from .models import Product, ProductGroup, Category, Cart
+from store.api.serializers import ProductSerializer, GroupSerializer, CategorySerializer, CartSerializer
 from rest_framework import generics
 from django_filters import rest_framework as filters
 from rest_framework.filters import OrderingFilter
 from .filters import ProductFilter
-import time
+from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 class ProductList(generics.ListCreateAPIView):
@@ -37,3 +37,10 @@ class SearchProducts(generics.ListAPIView):
     filterset_class = ProductFilter
     ordering_fields = ['name', 'price', 'created_at']
     # filterset_fields = ["name", "short_description", "category", "price", "composition"]
+
+class RetrieveUpdateCart(generics.RetrieveUpdateAPIView):
+    queryset = Cart.objects.all()
+    serializer_class = CartSerializer
+
+    def get_object(self):
+        return Cart.objects.get(user=self.request.user)
